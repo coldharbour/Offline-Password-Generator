@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+  background-color: #121212;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #00ff41;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+input[type="text"], select {
+  background-color: #121212;
+  border: none;
+  border-bottom: 2px solid #00ff41;
+  color: #00ff41;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 5px 10px;
+}
+
+input[type="text"]:focus, select:focus {
+  border-bottom: 2px solid #ff2079;
+}
+
+button {
+  background-color: #121212;
+  border: 2px solid #00ff41;
+  border-radius: 5px;
+  color: #00ff41;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  outline: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #00ff41;
+  color: #121212;
+}
+
+button:active {
+  background-color: #ff2079;
+  border-color: #ff2079;
+  color: #121212;
+}
+
+.neon-text {
+  color: #00ff41;
+  text-shadow:
+    0 0 5px #00ff41,
+    0 0 10px #00ff41,
+    0 0 20px #00ff41,
+    0 0 30px #00ff41,
+    0 0 40px #00ff41;
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+input[type="text"]::placeholder, select::placeholder {
+  color: #00ff41;
+  opacity: 0.5;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.list-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+
+}
+
+.list-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
